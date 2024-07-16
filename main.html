@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form method="post">
+	<form action="./submitform.php" method="post">
 		<label for="name">Name:</label>
 		<input type="text" id="name" placeholder="Name" required>
 		<br>
@@ -16,7 +16,7 @@
 		<input type="email" id="email" placeholder="Email" required>
 		<br>
 		<br>
-		<label for ="gender_m, gender_f">Gender</label>
+		<label for ="gender_m, gender_f">Gender:</label>
 		<br>
 		<label>Male</label>
 		<input type="radio" id="gender_m, gender_f" required>
@@ -25,8 +25,9 @@
 		<input type="radio" id="gender_m, gender_f" required>
 		<br>
 		<br>
-		<label for="CarBrands">Car Brands:</label>
+		<label for="Cars">Car Brands:</label>
 		<select id="Cars" aria-required >
+			<option>--Please choose an option--</option>
 			<option >Volvo</option>
 			<option>Telsa</option>
 			<option>Mustang</option>
@@ -50,6 +51,13 @@
 		<input type="password" id="password" placeholder="Password" required>
 		<br>
 		<br>
+		<label for="tos">I agree to the TOS</label>
+		<input type="checkbox"id="tos"required>
+		<br>
+		<br>
+
+		<button type="submit">Submit</button>
+	</form>
 		
 		
 		
